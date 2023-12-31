@@ -29,10 +29,7 @@ void ItemDetails::addItem() {
     ofstream outFile("items.txt",ios::app);
 
     cout << "Enter item code: ";
-    ifstream inFile("items.txt",ios::binary);
-    while (inFile.read(reinterpret_cast<char*>(this), sizeof(*this))) {
-
-    }
+    cin >> code;
 
     cout << "Enter item name: ";
     cin.ignore();
